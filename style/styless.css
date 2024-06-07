@@ -129,7 +129,7 @@ a {
   .menu-search::before {
     display: block;
     content: "";
-    background: url("/icon/divider.svg") no-repeat;
+    background: url("../icon/divider.svg") no-repeat;
     width: 2px;
     height: 32px;
     margin-right: 4px;
@@ -152,7 +152,7 @@ a {
     left: -16px;
     content: "";
     display: inline-block;
-    background: url("/icon/highlight.svg") no-repeat;
+    background: url("../icon/highlight.svg") no-repeat;
     width: 4px;
     height: 42px;
     margin: 0;
@@ -281,7 +281,7 @@ a {
     position: absolute;
     display: block;
     content: "";
-    background: url("/icon/divider2.svg") no-repeat;
+    background: url("../icon/divider2.svg") no-repeat;
     width: 2px;
     height: 32px;
     margin-right: 5px;
@@ -376,7 +376,7 @@ a {
     left: -16px;
     content: "";
     display: inline-block;
-    background: url("/icon/highlight.svg") no-repeat;
+    background: url("../icon/highlight.svg") no-repeat;
     width: 4px;
     height: 42px;
     margin: 0;
