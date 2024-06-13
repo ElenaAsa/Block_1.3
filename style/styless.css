@@ -69,11 +69,82 @@ a {
   text-decoration: none;
 }
 
+.icon__link-burger::after{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../icon/burger.svg");
+ 
+ 
+}
+.icon__link-call::after{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../icon/call.svg");
+ 
+}
+
+.icon__link-message::after{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../icon/message.svg");
+}
+
+.icon__link-man::after{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../icon/man.svg");
+}
+
+
+.icon__link-repair::after{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../icon/repair.svg");
+
+}
+.icon__link-search::after{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../icon/search.svg");
+}
+
 .container {
   display: flex;
+  width: 100%;
   align-items: center;
   padding: 0;
   margin: 0;
+  justify-content: space-between;
   overflow: hidden;
   background-color: #ffffff;
 }
@@ -93,26 +164,17 @@ a {
    
   }
 
-  
-
   .menu-left {
     padding: 0;
     display: flex;
     align-items: center;
     margin-right: 16px;
+
   }
 
   .logo__link-img {
     padding-left: 16px;
     display: flex;
-  }
-
-  .menu-right {
-    display: flex;
-    align-items: center;
-    gap: 16.73px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 
   .menu-right {
@@ -163,22 +225,21 @@ a {
     align-items: center;
     text-align: center;
     align-content: center;
-  }
+}
 
-  .header__item {
+.header__item {
     display: flex;
     margin-right: 32px;
-  }
+}
 
-  .header__link {
-    display: flex;
-    margin: auto;
-    margin-right: 8px;
-  }
+.header__link {
+  display: flex;
+    margin: auto 8px auto 0;
+}
 
   .slider__item:nth-child(1) {
     background: rgb(255, 255, 255);
-    border: 2px solid #0fc3dbb4;
+    border: 2px solid #B8FFEC;
     border-radius: 5px;
   }
 
@@ -210,19 +271,29 @@ a {
     line-height: 24px;
   }
 
-  .header_read-more {
-    display: flex;
-    align-items: center;
+  .main__read-more {
+    position: relative;
+    background: none;
+    border: none;
     font-size: 16px;
-    font-weight: 400;
-    gap: 8px;
-    padding-bottom: 16px;
-    padding-left: 16px;
+    font-family: "TT lakes", sans-serif;
+    color: #1B1C21;
+  
+    margin-right:150px;
     padding-top: 16px;
-    color: 1B1C21;
+    padding-bottom: 16px;
 }
 
-    
+.main__read-more::before {
+  content: "";
+  display: inline-block;
+  background: url(../icon/more.svg) 50% 50% no-repeat;
+  height: 11px;
+  width: 11px;
+  margin-right: 8px;
+ 
+}
+ 
 .main__text-box {
     display: flex;
     flex-direction: column;
@@ -250,14 +321,11 @@ a {
     width: 100%;
   }
 
-
-
-
-
-@media (min-width: 768px) {
+  
+  @media (min-width: 768px) {
   .header {
     display: flex;
-
+    justify-content: flex-end;
     padding-right: 8px;
   }
  
@@ -268,13 +336,41 @@ a {
     padding: 0;
     display: flex;
     align-items: center;
+    
   }
 
+  .header__menu-right{
+    display: flex;
+    margin-left: auto;
+  
+  }
   .menu-right {
     display: flex;
+    align-items: center;
+    gap: 16.73px;
+    padding-right: 16px;
+
+    /*
+    display: flex;
+    align-items: center;
     gap: 16.73px;
     padding-left: 16px;
-    margin-left: 230px;
+    margin-left: 230px; 
+    */
+  }
+/*
+.menu-submenu{
+  display: flex;
+  align-items: center;
+  gap: 16.73px;
+ 
+}
+*/
+  .menu-search {
+    display: flex;
+    align-items: center;
+    gap: 16.73px;
+    padding-right: 16px;
   }
 
   .logo__link::before {
@@ -322,7 +418,7 @@ a {
   }
 
 
-.header_read-more {
+.main__read-more  {
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -335,9 +431,8 @@ a {
   font-family: "TT lakes", sans-serif;
   color: #1b1c21;
   margin-left: 25px;
-
   font-weight: 500;
-  margin-left: 8px;
+ 
 }
 
 .main__image-container {
@@ -345,6 +440,8 @@ a {
  
 }
 }
+
+
 
 
 @media (min-width: 1120px){
