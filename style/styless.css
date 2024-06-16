@@ -57,7 +57,7 @@ a {
   text-decoration: none;
 }
 
-.button-circle {
+.button__circle  {
   width: 40px;
   height: 40px;
   background-color: #ff3e79;
@@ -69,7 +69,7 @@ a {
   text-decoration: none;
 }
 
-.icon__link-burger::after{
+.button-circle--burger::after{
   content: "";
   display: block;
   width: 40px;
@@ -81,7 +81,7 @@ a {
  
  
 }
-.icon__link-call::after{
+.button-circle--call::after{
   content: "";
   display: block;
   width: 40px;
@@ -93,7 +93,7 @@ a {
  
 }
 
-.icon__link-message::after{
+.button-circle--message::after{
   content: "";
   display: block;
   width: 40px;
@@ -104,7 +104,7 @@ a {
   background-image: url("../icon/message.svg");
 }
 
-.icon__link-man::after{
+.button-circle--man::after{
   content: "";
   display: block;
   width: 40px;
@@ -116,7 +116,7 @@ a {
 }
 
 
-.icon__link-repair::after{
+.button-circle---repair::after{
   content: "";
   display: block;
   width: 40px;
@@ -127,7 +127,7 @@ a {
   background-image: url("../icon/repair.svg");
 
 }
-.icon__link-search::after{
+.button-circle--search::after{
   content: "";
   display: block;
   width: 40px;
@@ -168,7 +168,7 @@ a {
     padding: 0;
     display: flex;
     align-items: center;
-    margin-right: 16px;
+   padding-right: 16px;
 
   }
 
@@ -229,6 +229,7 @@ a {
 
 .header__item {
     display: flex;
+    align-content:center;
     margin-right: 32px;
 }
 
@@ -349,23 +350,8 @@ a {
     align-items: center;
     gap: 16.73px;
     padding-right: 16px;
-
-    /*
-    display: flex;
-    align-items: center;
-    gap: 16.73px;
-    padding-left: 16px;
-    margin-left: 230px; 
-    */
   }
-/*
-.menu-submenu{
-  display: flex;
-  align-items: center;
-  gap: 16.73px;
- 
-}
-*/
+
   .menu-search {
     display: flex;
     align-items: center;
@@ -373,7 +359,7 @@ a {
     padding-right: 16px;
   }
 
-  .logo__link::before {
+  .logo::before {
     position: absolute;
     display: block;
     content: "";
