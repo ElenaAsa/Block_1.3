@@ -428,8 +428,6 @@ a {
 }
 
 
-
-
 @media (min-width: 1120px){
   .header {
     display: none;
@@ -473,7 +471,6 @@ a {
     flex-wrap: wrap;
     overflow: hidden;
   }
- 
  
 
   .main__text-block {
