@@ -23,16 +23,18 @@ body,
 html {
   padding: 0;
   margin: 0;
+  font-size: 16px;
   background-color: #f8f8f8;
   box-sizing: border-box;
   font-family: "TT Lakes", sans-serif;
 }
 
+
 *,
 *::after,
 *::before {
   box-sizing: inherit;
- 
+
 }
 
 ul,
@@ -57,82 +59,40 @@ a {
   text-decoration: none;
 }
 
-.button__circle  {
-  width: 40px;
-  height: 40px;
-  background-color: #ff3e79;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  border: none;
-  text-decoration: none;
-}
 
-.button-circle--burger::after{
-  content: "";
+
+
+.button-circle--call{
   display: block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../icon/burger.svg");
- 
- 
-}
-.button-circle--call::after{
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../icon/call.svg");
- 
 }
 
-.button-circle--message::after{
-  content: "";
+.button-circle--message{
   display: block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../icon/message.svg");
 }
 
-.button-circle--man::after{
-  content: "";
+.button-circle--man{
   display: block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../icon/man.svg");
 }
 
 
-.button-circle---repair::after{
-  content: "";
+.button-circle--repair{
   display: block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../icon/repair.svg");
-
 }
-.button-circle--search::after{
-  content: "";
+
+.button-circle--search{
   display: block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../icon/search.svg");
@@ -150,19 +110,37 @@ a {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
     align-items: center;
     padding: 0 16px;
-    padding-right: 0;
     box-sizing: border-box;
     margin: 0;
     width: 100%;
     height: 88px;
     background-color: white;
     border-bottom: 1px solid #D9FFF5;
-   
+
   }
+  .button-circle--burger{
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../icon/burger.svg");
+    }
+
+
+    .button-circle{
+
+      width: 40px;
+      height: 40px;
+      background-color: #ff3e79;
+      border-radius: 50%;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+    }
 
   .menu-left {
     padding: 0;
@@ -172,10 +150,11 @@ a {
 
   }
 
-  .logo__link-img {
-    padding-left: 16px;
-    display: flex;
-  }
+
+    .logo__link-img {
+      padding-left: 16px;
+      display: flex;
+    }
 
   .menu-right {
     display: none;
@@ -185,7 +164,7 @@ a {
     display: flex;
     align-items: center;
     gap: 16.73px;
-    padding-right: 16px;
+
   }
 
   .menu-search::before {
@@ -196,6 +175,8 @@ a {
     height: 32px;
     margin-right: 4px;
   }
+
+
 
   .header__top-title {
     position: relative;
@@ -223,27 +204,21 @@ a {
   .header__link-item {
     display: none;
     align-items: center;
-    text-align: center;
+    text-align:  center;
     align-content: center;
 }
+
 
 .header__item {
     display: flex;
     align-content:center;
     margin-right: 32px;
-}
 
+}
 .header__link {
   display: flex;
-    margin: auto 8px auto 0;
+    margin: auto 8px auto 8px;
 }
-
-  .slider__item:nth-child(1) {
-    background: rgb(255, 255, 255);
-    border: 2px solid #B8FFEC;
-    border-radius: 5px;
-  }
-
   .slider__items {
     display: flex;
     width: 100%;
@@ -254,7 +229,7 @@ a {
     overflow-y: hidden;
   }
 
-  .slider__item {
+  .slider__link{
     display: flex;
     width: auto;
     height: 40px;
@@ -268,18 +243,20 @@ a {
     white-space: nowrap;
     color: #7e7e82;
     font-size: 16px;
-    font-family: "TT lakes", sans-serif;
     line-height: 24px;
   }
 
+  .slider__link--special {
+    background: rgb(255, 255, 255);
+    border: 2px solid #B8FFEC;
+    border-radius: 5px;
+  }
   .main__read-more {
     position: relative;
     background: none;
     border: none;
     font-size: 16px;
-    font-family: "TT lakes", sans-serif;
     color: #1B1C21;
-  
     margin-right:150px;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -292,9 +269,9 @@ a {
   height: 11px;
   width: 11px;
   margin-right: 8px;
- 
+
 }
- 
+
 .main__text-box {
     display: flex;
     flex-direction: column;
@@ -322,14 +299,14 @@ a {
     width: 100%;
   }
 
-  
+
   @media (min-width: 768px) {
   .header {
     display: flex;
     justify-content: flex-end;
     padding-right: 8px;
   }
- 
+
 
   .menu-left {
     padding-left: 24px;
@@ -337,13 +314,13 @@ a {
     padding: 0;
     display: flex;
     align-items: center;
-    
+
   }
 
   .header__menu-right{
     display: flex;
     margin-left: auto;
-  
+
   }
   .menu-right {
     display: flex;
@@ -353,9 +330,6 @@ a {
   }
 
   .menu-search {
-    display: flex;
-    align-items: center;
-    gap: 16.73px;
     padding-right: 16px;
   }
 
@@ -384,12 +358,11 @@ a {
   }
 
   .main__text-box {
-    display: flex;
-    flex-direction: column;
+
     flex-basis: 45%;
   }
 
-  
+
 
   .main__text {
     max-height: 160px;
@@ -398,8 +371,6 @@ a {
     margin: 0;
     padding-left: 24px;
     font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
     height: 160px;
   }
 
@@ -408,22 +379,19 @@ a {
   display: flex;
   align-items: center;
   font-size: 16px;
-  font-weight: 400;
   gap: 8px;
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 16px;
-  font-size: 16px;
-  font-family: "TT lakes", sans-serif;
   color: #1b1c21;
   margin-left: 25px;
   font-weight: 500;
- 
+
 }
 
 .main__image-container {
   flex-basis: 50%;
- 
+
 }
 }
 
@@ -443,14 +411,12 @@ a {
     padding-top: 0;
   }
 
+
   .header__link-item {
     display: flex;
     padding-top: 42px;
   }
 
-  .header__item {
-    display: flex;
-  }
 
   .header__top-title::before {
     position: absolute;
@@ -471,7 +437,7 @@ a {
     flex-wrap: wrap;
     overflow: hidden;
   }
- 
+
 
   .main__text-block {
     display: flex;

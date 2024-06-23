@@ -4,64 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/styless.css">
+    <link rel="stylesheet" href="style/normalize.css">
     <title>Document</title>
 </head>
    <header class="header">
         <div class="container">
            <div class="header__menu-left">
                 <div class="menu-left">
-                  <button class="button__circle button-circle--burger" type="button"></button>
+                    <button class="button button-circle button-circle--burger"></button>
                     <div class="logo">
                         <a class="logo__link" href="#">
                             <img class="logo__link-img" src="img/logo.svg" alt="logo"></a>
                     </div>
              </div>
-            </div>
+           </div>
             <div class="header__menu-right">
                     <ul class="menu-right">
-                        <li class="button__circle"><a href="#" class="button__circle button-circle--call"></a></li>
-                        <li class="button__circle"><a href="#" class="button__circle button-circle--message"></a></li>
-                        <li class="button__circle"><a href="#" class="button__circle button-circle--man"></a></li>
+                        <li class="menu__item"><a href="#" class="menu__link button-circle button-circle--call"></a></li>
+                        <li class="menu__item"><a href="#" class="menu__link button-circle button-circle--message"></a></li>
+                        <li class="menu__item"><a href="#" class="menu__link button-circle button-circle--man"></a></li>
                     </ul>
             </div>
                 <div class="header__menu-search">
                     <ul class="menu-search">
-                     <li class="button__circle"><a href="#" class="button__circle button-circle---repair"></a></li>
-                     <li class="button__circle"><a href="#" class="button__circle button-circle--search"></a></li>
+                     <li class="menu__item"><a href="#" class="menu__link button-circle button-circle--repair"></a></li>
+                     <li class="menu__item"><a href="#" class="menu__link button-circle button-circle--search"></a></li>
                     </ul>
                 </div>
             </div>
  </header>
+ <main class="main">
         <div class="header__main-header">
              <div class="header__top">
                     <h1 class="header__top-title"> Услуги и сервисы </h1>
-                     <ul class="header__link-item">
-                        <li class="header__item"><span class="header__link">Оставить заявку</span>
-                           <button class="button__circle button-circle---repair"></button></li>
-                            <li class="header__item"><span class="header__link">Статус ремонта</span>
-                                <button class="button__circle button-circle--search"></button></li>
-                        
-                 </ul>  
+                     <div class="header__link-item">
+                        <div class="header__item">
+                           <button class="button-circle button-circle--repair"></button>
+                           <span class="header__link">Оставить заявку</span>
+                           </div>
+                            <div class="header__item">
+                            <button class="button-circle button-circle--search"></button>
+                            <span class="header__link">Статус ремонта</span>
+                        </div>
+                     </div>
              </div>
         </div>
-        <main>  
-             <div class="slider">
+          <nav class="slider">
              <ul class="slider__items">
-                <li class="slider__item"><a href="#">Ремонтируемые устройства</a></li>
-                <li class="slider__item"><a href="#">Дополнительные услуги</a></li>
-                <li class="slider__item"><a href="#">Цены на услуги</a></li>
-                <li class="slider__item"><a href="#">Специальные цены</a></li>
-                <li class="slider__item"><a href="#">Адреса сервисных центров</a></li>
-                <li class="slider__item"><a href="#">Отзывы</a></li>
+                <li class="slider__item slider__item--special"><a href="#" class="slider__link slider__link--special">Ремонтируемые устройства</a></li>
+                <li class="slider__item"><a href="#" class="slider__link">Дополнительные услуги</a></li>
+                <li class="slider__item"><a href="#" class="slider__link">Цены на услуги</a></li>
+                <li class="slider__item"><a href="#" class="slider__link">Специальные цены</a></li>
+                <li class="slider__item"><a href="#" class="slider__link">Адреса сервисных центров</a></li>
+                <li class="slider__item"><a href="#" class="slider__link">Отзывы</a></li>
              </ul>
-            </div>
-        </main>
+            </nav>
+
         </div>
             <div class="main__text-block">
             <div class="main__text-box">
-                    <p class="main__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                    <p class="main__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                                           Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>
-                                         
+
                                           Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.
                                           Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас
                                           родным и близким.</p>
@@ -69,13 +73,14 @@
                                          <button class="main__read-more">Читать далее</button>
             </div>
             <div class="main__image-container">
-                <img class="main__image" src="img/main.svg" alt="image" >
+                <img class="main__image" src="img/_MG_main.jpg" alt="image">
                  </div>
-             </div> 
+             </div>
+            </main>
       </body>
         </html>
 
 
 
 
-    
+
