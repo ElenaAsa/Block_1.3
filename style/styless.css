@@ -29,14 +29,6 @@ html {
   font-family: "TT Lakes", sans-serif;
 }
 
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-
-}
-
 ul,
 li,
 a,
